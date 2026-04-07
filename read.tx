@@ -1,0 +1,66 @@
+# MediCare – Doctor Management System
+
+A simple PHP + MySQL CRUD web application for managing doctor records.
+
+## Project Files
+- `config.php`  → Database connection
+- `index.php`   → Homepage (doctor cards)
+- `admin.php`   → Admin panel (Add / Edit / Delete)
+- `uploads/`    → Doctor photo uploads (auto-created)
+
+## Setup Instructions
+
+### 1. Install XAMPP
+Download from https://www.apachefriends.org and install.
+Start Apache + MySQL from XAMPP Control Panel.
+
+### 2. Create Database
+Open: http://localhost/phpmyadmin
+Run this SQL:
+
+```sql
+CREATE DATABASE doctor_management;
+USE doctor_management;
+
+CREATE TABLE doctors (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  specialization VARCHAR(100),
+  phone VARCHAR(20),
+  email VARCHAR(100),
+  experience INT DEFAULT 0,
+  available_days VARCHAR(100),
+  image VARCHAR(255)
+);
+```
+
+### 3. Place Files
+Copy this entire folder to: `C:/xampp/htdocs/doctor_management/`
+
+### 4. Run
+- Home Page:  http://localhost/doctor_management/index.php
+- Admin Page: http://localhost/doctor_management/admin.php
+
+## Features
+- Add doctors with photo upload
+- Edit existing doctor info
+- Delete doctors (removes photo too)
+- Homepage auto-updates from database
+- Responsive card layout
+
+## Tech Stack
+- PHP 7+ / 8+
+- MySQL
+- HTML5 + CSS3
+- XAMPP (Apache)
+
+## fixing github essue
+
+"
+
+git add .
+git commit -m "Week 2 – Basic CRUD Implementation"
+git push
+
+
+"
