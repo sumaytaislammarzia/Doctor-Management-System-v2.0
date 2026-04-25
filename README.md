@@ -161,7 +161,7 @@ At the end of 4 weeks, the system will:
 
 ---
 
-### Week 3 – Update & Delete Features
+### Week 3 – Update & Delete Features (spl setup in Xamp)
 
 * Implement Edit doctor feature
 * Implement Delete functionality
